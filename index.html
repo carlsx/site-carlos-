@@ -38,7 +38,7 @@
           <a href="#" class="lista-menu__link">História</a>
         </li>
       </ul>
-      <img src="img/LogoF1.svg" alt="Logo da Fórmula 1" class="container__imagem">
+      <img src="URL_DA_IMAGEM_DO_LOGO" alt="Logo da Fórmula 1" class="container__imagem">
       <h1 class="container__titulo"><b class="container__titulo--negrito">F1</b> World</h1>
 
       <ul class="opções">
@@ -67,13 +67,13 @@
 
     </div>
     <div class="container">
-      <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem container__imagem-transparente"></a>
+      <a href="#"><img src="URL_DA_IMAGEM_FAVORITOS" alt="Favoritos" class="container__imagem container__imagem-transparente"></a>
       <a href="#" class="container__link">
-        <img src="img/Compras.svg" alt="Minhas compras" class="container__imagem">
+        <img src="URL_DA_IMAGEM_COMPRAS" alt="Minhas compras" class="container__imagem">
         <p class="container__texto">Minha sacola</p>
       </a>
       <a href="#" class="container__link">
-        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <img src="URL_DA_IMAGEM_PERFIL" alt="Meu perfil" class="container__imagem">
         <p class="container__texto">Meu perfil</p>
       </a>
     </div>
@@ -92,11 +92,11 @@
       <div class="swiper">
         <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/GPMonaco.svg" alt="GP de Mônaco"></div>
-          <div class="swiper-slide"><img src="img/GPItalia.svg" alt="GP da Itália"></div>
-          <div class="swiper-slide"><img src="img/PilotoHamilton.svg" alt="Lewis Hamilton"></div>
-          <div class="swiper-slide"><img src="img/PilotoVerstappen.svg" alt="Max Verstappen"></div>
-          <div class="swiper-slide"><img src="img/GPBrasil.svg" alt="GP do Brasil"></div>
+          <div class="swiper-slide"><img src="URL_DA_IMAGEM_GP_MONACO" alt="GP de Mônaco"></div>
+          <div class="swiper-slide"><img src="URL_DA_IMAGEM_GP_ITALIA" alt="GP da Itália"></div>
+          <div class="swiper-slide"><img src="URL_DA_IMAGEM_PILOTO_HAMILTON" alt="Lewis Hamilton"></div>
+          <div class="swiper-slide"><img src="URL_DA_IMAGEM_PILOTO_VERSTAPPEN" alt="Max Verstappen"></div>
+          <div class="swiper-slide"><img src="URL_DA_IMAGEM_GP_BRASIL" alt="GP do Brasil"></div>
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
@@ -109,45 +109,12 @@
             <h2 class="descrição__titulo-livro">História da Fórmula 1</h2>
             <p class="descrição__texto">Descubra os momentos mais emocionantes da história da F1.</p>
           </div>
-          <img src="img/HistoriaF1.svg" class="descrição__imagem" />
+          <img src="URL_DA_IMAGEM_HISTORIA_F1" class="descrição__imagem" alt="História da Fórmula 1" />
         </div>
         <div class="card__botões">
           <ul class="botões">
-            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
-            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
-          </ul>
-          <a href="#" class="botões__ancora">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="carrossel">
-    <h2 class="carrossel__titulo">Corridas mais emocionantes</h2>
-
-    <div class="carrossel__container">
-      <div class="swiper">
-        <div class="swiper-pagination"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/GPMonaco.svg" alt="GP de Mônaco"></div>
-          <div class="swiper-slide"><img src="img/GPItalia.svg" alt="GP da Itália"></div>
-          <div class="swiper-slide"><img src="img/PilotoHamilton.svg" alt="Lewis Hamilton"></div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-      <div class="card">
-        <div class="card__descrição">
-          <img src="img/Estrelas.svg" alt="Avaliação">
-          <h3 class="descrição__titulo">Piloto do Mês</h3>
-          <h2 class="descrição__titulo-livro">Ayrton Senna</h2>
-          <p class="descrição__texto">Um dos maiores ícones da Fórmula 1, Senna marcou gerações com sua determinação e talento.</p>
-        </div>
-        <div class="card__botões">
-          <ul class="botões">
-            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
-            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+            <li class="botões__item"><img src="URL_DA_IMAGEM_FAVORITAR" alt="Favoritar"></li>
+            <li class="botões__item"><img src="URL_DA_IMAGEM_CARRINHO" alt="Adicionar ao carrinho"></li>
           </ul>
           <a href="#" class="botões__ancora">Saiba mais</a>
         </div>
@@ -209,6 +176,21 @@
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+        1440: {
+          slidesPerView: 3,
+        },
       },
     });
   </script>
